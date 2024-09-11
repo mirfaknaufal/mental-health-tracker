@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jro83#q12e#)-!=4l&b=aa29q7uhhm*hlwnvubw4-9rf$$dvmb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "mirfak-naufal-mentalhealthtracker.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "http://mirfak-naufal-mentalhealthtracker.pbp.cs.ui.ac.id", "https://mirfak-naufal-mentalhealthtracker.pbp.cs.ui.ac.id"]
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mental_health_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
